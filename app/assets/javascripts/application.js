@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+document.write('user.name = ' + user.name);
+document.write('<br />');
+document.write('user.email = ' + user.email);
