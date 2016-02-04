@@ -1,1 +1,4 @@
-<%= obj_as_js_var :user, @user, :javascript %>
+<% obj_as_js_var :user, @user, :javascript %>
+<p>Here, the injected JS through obj_as_js_var will be injected into the head<br />
+this makes the variables available to the later included application.js</p>
+<div id="result"></div>

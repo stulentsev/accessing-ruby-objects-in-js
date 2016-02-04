@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
-document.write('user.name = ' + user.name);
-document.write('<br />');
-document.write('user.email = ' + user.email);
+document.addEventListener('page:change', function() {
+  str = 'user.name = ' + user.name + '<br />'
+  str += 'user.email = ' + user.email
+  document.getElementById('result').innerHTML = str
+});

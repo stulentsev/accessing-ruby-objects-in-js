@@ -7,7 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h3>application.js is included at the bottom of the page, after rendering the view<br />
+which renders the JS in either the head using content_for or somewhere in the view.</h3>
+<%= link_to 'inline example', inline_path %> |
+<%= link_to 'in head example', head_path %>
 <%= yield %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>

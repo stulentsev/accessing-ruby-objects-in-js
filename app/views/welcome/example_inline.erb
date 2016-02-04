@@ -1,1 +1,4 @@
 <%= obj_as_js_var :user, @user %>
+<p>Here, the JS gets injected directly in the page wherever the call to obj_as_js_var is used<br />
+all JS that comes after this will be able to use the user var</p>
+<div id="result"></div>
